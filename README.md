@@ -44,4 +44,4 @@ Project status: **Finished**
 THis project was considered to test my NLP knowledge and its application on a real-life dataset, from a real-world challenge.
 
 ## Contact
-Feel free to contact me, send a mail to **pranshu1921@gmail.com**
+Feel free to contact , drop an email to **pranshu1921@gmail.com**
