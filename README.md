@@ -1,47 +1,41 @@
-# Amazon-Fine-Food-Reviews
+# Amazon-Food-Reviews-Analysis-and-Modelling Using Various Machine Learning Models
 
-This is a _**Natural Language Processing(NLP)**_ based project that uses data provided on the [**'Amazon Fine Food reviews'**](https://www.kaggle.com/snap/amazon-fine-food-reviews/tasks?taskId=797) challenge posted on Kaggle, to determine the polarity of a given user review, following a score/rating of 4 or 5 considered positive, 1 or 2 negative and 3 neutral and ignored.
 
-## Table of contents
-* [General info](#general-info)
-* [Setup](#setup)
-* [Status](#status)
-* [Inspiration](#inspiration)
-* [Contact](#contact)
+#### Performed Exploratory Data Analysis, Data Cleaning, Data Visualization and Text Featurization(BOW, tfidf, Word2Vec). Build several ML models like KNN, Naive Bayes, Logistic Regression, SVM, Random Forest, GBDT, LSTM(RNNs) etc.
 
-## General info
+### Objective:
+Given a text review, determine the sentiment of the review whether its positive or negative.
 
-This dataset consists of reviews of fine foods from amazon. The data span a period of more than 10 years, including all ~500,000 reviews up to October 2012. Reviews include product and user information, ratings, and a plain text review. It also includes reviews from all other Amazon categories.
+Data Source: https://www.kaggle.com/snap/amazon-fine-food-reviews
 
-### Contents
+#### About Dataset
 
-**Reviews.csv**: Pulled from the corresponding SQLite table named Reviews in database.sqlite
-**database.sqlite**: Contains the table 'Reviews'
+The Amazon Fine Food Reviews dataset consists of reviews of fine foods from Amazon.<br>
 
-Data includes:
+Number of reviews: 568,454<br>
+Number of users: 256,059<br>
+Number of products: 74,258<br>
+Timespan: Oct 1999 - Oct 2012<br>
+Number of Attributes/Columns in data: 10 
 
-Reviews from **Oct 1999 - Oct 2012**
-**568,454** reviews
-**256,059** users
-**74,258** products
-**260** users with **>** **50** reviews
+Attribute Information:
 
-## Setup
+1. Id
+2. ProductId - unique identifier for the product
+3. UserId - unqiue identifier for the user
+4. ProfileName
+5. HelpfulnessNumerator - number of users who found the review helpful
+6. HelpfulnessDenominator - number of users who indicated whether they found the review helpful or not
+7. Score - rating between 1 and 5
+8. Time - timestamp for the review
+9. Summary - brief summary of the review
+10. Text - text of the review
+<hr>
 
-* Download the Jupyter Notebook above on your computer.
-
-### Install the requirements
- 
-* Install the requirements using `pip install -r requirements.txt`.
-    * Make sure you use Python 3.
-    
-* Run the jupyter notebook
-
-## Status
-Project status: **Finished**
-
-## Inspiration
-THis project was considered to test my NLP knowledge and its application on a real-life dataset, from a real-world challenge.
-
-## Contact
-Feel free to contact , drop an email to **pranshu1921@gmail.com**
+### Amazon Food Reviews EDA, NLP, Text Preprocessing and Visualization using TSNE
+1. Defined Problem Statement  
+2. Performed Exploratory Data Analysis(EDA) on Amazon Fine Food Reviews Dataset plotted Word Clouds, Distplots, Histograms, etc.
+3. Performed Data Cleaning & Data Preprocessing by removing unneccesary and duplicates rows and for text reviews removed html tags, punctuations, Stopwords and Stemmed the words using Porter Stemmer 
+4. Documented the concepts clearly
+5. Plotted TSNE plots for Different Featurization of Data viz. BOW(uni-gram), tfidf, Avg-Word2Vec and tf-idf-Word2Vec
+<hr>
